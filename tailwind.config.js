@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        blur: 'url("/assets/blur-background.jpg")'
+        mountain: "url('https://64.media.tumblr.com/a20deb8fd0f205ad0c2a779e75cc8f17/ccb3eb59b9648095-ad/s2048x3072/0591d07b628f57512de6d989b605f0bfbc3fa85c.jpg')"
       },
       fontFamily:{
         sans: 'Roboto, sans-serif',
