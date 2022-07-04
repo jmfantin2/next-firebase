@@ -2,6 +2,8 @@
 // https://stackoverflow.com/questions/69139443/property-auth-does-not-exist-on-type-typeof-import-firebase-auth
 import firebase from "firebase/compat/app";
 
+// ––––––––––––––––– BASIC FIREBASE SETUP –––––––––––––––––
+
 // asks next to bundle these SDKs
 import "firebase/compat/auth";
 // into our main javascript bundle,
@@ -31,3 +33,5 @@ if (!firebase.apps.length) {
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 export const storage = firebase.storage();
+
+// ––––––––––––––––– EXTRA FIREBASE GIMMICKS –––––––––––––––––
