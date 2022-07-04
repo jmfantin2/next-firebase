@@ -9,3 +9,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+.loader {
+  @apply animate-spin
+  rounded-[50%] w-[50px] h-[50px]
+  border-t-[10px] border-t-accent
+  border-[10px] border-solid border-gray-200 
+}
