@@ -4,9 +4,11 @@ import Image from "next/image";
 import { GButton } from "../components/gears/GButton";
 import { Logo } from "../components/Logo";
 
+import toast from "react-hot-toast";
+
 export default function Home() {
   function handleGLogin() {
-    console.log("vc tentou logar :)");
+    toast.error("tbd");
   }
   return (
     <div className="bg-mountain opacity-90 bg-cover bg-no-repeat">
@@ -29,14 +31,9 @@ export default function Home() {
             <p className="text-lg text-white leading-relaxed">
               Precificação não precisa ser um estresse.
             </p>
-
-            <div className="flex-1 flex justify-center mt-8">
-              <GButton click={handleGLogin} />
-            </div>
           </div>
         </div>
       </main>
-
       <footer className="flex flex-1 text-white px-8 border-t border-solid border-[#eaeaea] justify-center min-h-[10vh] items-center">
         <p>Powered by </p>
         <Logo />
