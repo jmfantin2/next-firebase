@@ -9,36 +9,19 @@ export function Navbar() {
     user &&
     username && (
       <nav className="tw_navbar">
-        <ul>
-          <li>
-            <Link href="/">
-              <button>FEED</button>
+        <div>
+          <div>
+            <Link href="/dash/products">
+              <button>Produtos</button>
             </Link>
-          </li>
-          {/** user is signed-in and has username */}
-          {username && (
-            <>
-              <li>
-                <Link href="/admin">
-                  <button>Write posts</button>
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${username}`}>
-                  <button>{username}</button>
-                </Link>
-              </li>
-            </>
-          )}
-          {/** user is not signed-in OR has not username */}
-          {!username && (
-            <li>
-              <Link href="/enter">
-                <button>Log in</button>
-              </Link>
-            </li>
-          )}
-        </ul>
+            <Link href="/dash/dre">
+              <button>DRE</button>
+            </Link>
+          </div>
+          <Link href={`/${username}`}>
+            <button>Sair</button>
+          </Link>
+        </div>
       </nav>
     )
   );

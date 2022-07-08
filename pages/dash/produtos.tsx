@@ -1,9 +1,9 @@
 import { Loader } from "../../components/Loader";
 
-export default function AdminPage({}) {
+export default function ProductsPage({}) {
   return (
     <main className="tw_container">
-      <h1>adminpage</h1>
+      <h1>tabela produtos</h1>
       <Loader show />
     </main>
   );

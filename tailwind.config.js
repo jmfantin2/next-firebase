@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         accent: '#337aff',
+        accent_hover: '#4585ff',
         green: {
           300: '#00B37E',
           500: '#00875F',
