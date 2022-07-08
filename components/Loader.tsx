@@ -3,5 +3,5 @@ interface LoaderProps {
 }
 
 export function Loader({ show }: LoaderProps) {
-  return show ? <div className="gl_loader"></div> : null;
+  return show ? <div className="tw_loader"></div> : null;
 }

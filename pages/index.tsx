@@ -7,15 +7,14 @@ import {
   useCallback,
 } from "react";
 import toast from "react-hot-toast";
-import { GButton } from "../components/gears/GButton";
+import { GButton } from "../components/GButton";
 import { BrowserInfo } from "../components/BrowserInfo";
 import { UserContext } from "../lib/context";
 import { auth, firestore, googleAuthProvider } from "../lib/firebase";
 
 import debounce from "lodash.debounce";
 
-import { Logo } from "../components/Logo";
-import { Loader } from "../components/gears/Loader";
+import { Loader } from "../components/Loader";
 
 export default function AuthWall({}) {
   const { user, username } = useContext(UserContext);
@@ -24,7 +23,7 @@ export default function AuthWall({}) {
     <>
       <BrowserInfo />
       <div className="bg-auth opacity-90 bg-cover bg-no-repeat">
-        <main className="min-h-[90vh] w-full flex-1 flex flex-col items-center justify-center">
+        <main className="min-h-[100vh] w-full flex-1 flex flex-col items-center justify-center">
           {!user /* signed out */ ? (
             <>
               <h1 className="text-[2.5rem]">
@@ -46,10 +45,6 @@ export default function AuthWall({}) {
             <SignOutButton />
           )}
         </main>
-        <footer className="flex flex-1 text-white px-8 border-t border-solid border-[#eaeaea] justify-center min-h-[10vh] items-center">
-          <p>Powered by </p>
-          <Logo />
-        </footer>
       </div>
     </>
   );
@@ -62,7 +57,9 @@ function SignInButton() {
     try {
       await auth.signInWithPopup(googleAuthProvider);
       setLoading(false);
-      toast.success("tudo certo");
+      toast("olá", {
+        icon: "😄",
+      });
     } catch (e) {
       toast.error("tente novamente");
       setLoading(false);
@@ -72,7 +69,19 @@ function SignInButton() {
 }
 
 function SignOutButton() {
-  return <button onClick={() => auth.signOut()}>Sair</button>;
+  return (
+    <button
+      onClick={() =>
+        auth.signOut().then(() => {
+          toast("até a próxima!", {
+            icon: "👋",
+          });
+        })
+      }
+    >
+      Sair
+    </button>
+  );
 }
 
 function UsernameForm() {

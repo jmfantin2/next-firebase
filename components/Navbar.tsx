@@ -8,7 +8,7 @@ export function Navbar() {
   return (
     user &&
     username && (
-      <nav className="gl_navbar">
+      <nav className="tw_navbar">
         <ul>
           <li>
             <Link href="/">
