@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         auth: "url('https://64.media.tumblr.com/a20deb8fd0f205ad0c2a779e75cc8f17/ccb3eb59b9648095-ad/s2048x3072/0591d07b628f57512de6d989b605f0bfbc3fa85c.jpg')",
-        dash: "url('https://64.media.tumblr.com/a20deb8fd0f205ad0c2a779e75cc8f17/ccb3eb59b9648095-ad/s2048x3072/0591d07b628f57512de6d989b605f0bfbc3fa85c.jpg')"
+        dash: "url('https://64.media.tumblr.com/5a85b9f90c36a8f1c2e9e59d5a2a07c2/1a8b6e3ca448cb94-10/s2048x3072/eeb96ee5bc9cae1ac81ec1bcec855c7cd2629c67.pnj')"
       },
       fontFamily:{
         sans: 'Roboto, sans-serif',

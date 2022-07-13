@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { useContext } from "react";
 import { UserContext } from "../lib/context";
+import { auth } from "../lib/firebase";
+import { redirect } from "../lib/redirect";
+
+import toast from "react-hot-toast";
 
 export function Navbar() {
   const { user, username } = useContext(UserContext);
@@ -18,9 +22,18 @@ export function Navbar() {
               <button>DRE</button>
             </Link>
           </div>
-          <Link href={`/${username}`}>
-            <button>Sair</button>
-          </Link>
+          <button
+            onClick={() =>
+              auth.signOut().then(() => {
+                toast("até a próxima!", {
+                  icon: "👋",
+                });
+                redirect("/");
+              })
+            }
+          >
+            Sair
+          </button>
         </div>
       </nav>
     )
