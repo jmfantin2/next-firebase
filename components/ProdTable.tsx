@@ -1,4 +1,4 @@
-export function Table() {
+export function ProdTable() {
   return (
     <table className="table-fixed">
       <thead>

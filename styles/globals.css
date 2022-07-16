@@ -10,7 +10,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 .tw_container {
-  @apply pt-[5rem] pr-[1rem] pl-[1rem]
+  @apply pt-[5rem] pr-[1rem] pl-[1rem] h-[100vh]
+  /* debug: bg-pink-300 bg-opacity-50 */
 }
 /* ### LOADING SPINNER ### */
 .tw_loader {
