@@ -7,6 +7,8 @@ import {
   useCallback,
 } from "react";
 
+import { XCircle, CheckCircle, HourglassHigh } from "phosphor-react";
+
 import debounce from "lodash.debounce";
 
 import { UserContext } from "../../lib/context";
@@ -121,29 +123,30 @@ export function UsernameForm() {
     !username && (
       <section>
         <h3>Escolha um nome de usuário</h3>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="flex flex-row items-center">
           <input
+            className="rounded-full pr-2 pl-2 max-w-[10rem] mr-2"
             type="text"
             name="username"
             placeholder="mercado_brasco"
             value={formValue}
             onChange={onChange}
           />
-          <UsernameMessage
-            username={formValue}
-            isValid={isValid}
-            loading={loading}
-          />
-          <button type="submit" className="btn-green" disabled={!isValid}>
-            {" "}
-            Escolher{" "}
+          <button
+            type="submit"
+            className="rounded-full bg-white text-4xl"
+            disabled={!isValid}
+          >
+            <h1>
+              {loading ? (
+                <HourglassHigh className="p-1" />
+              ) : isValid ? (
+                <CheckCircle />
+              ) : (
+                <XCircle />
+              )}
+            </h1>
           </button>
-          <h3>Debug State</h3>
-          <div>
-            username: {formValue} <br />
-            loading: {loading.toString()} <br />
-            is valid: {isValid.toString()}
-          </div>
         </form>
       </section>
     )
