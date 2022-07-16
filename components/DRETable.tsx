@@ -2,10 +2,10 @@ import { Calendar } from "phosphor-react";
 
 export function DRETable() {
   return (
-    <table className="tw_table">
+    <table className="tw_table tw_table_vert">
       <thead>
         <tr>
-          <th>CNPJ</th>
+          <th>Empresa (CNPJ)</th>
           <th>
             Data
             <br />
@@ -47,7 +47,7 @@ export function DRETable() {
       <tbody>
         <tr>
           <td>96.245.212/0001-08</td>
-          <td>
+          <td className="hover:cursor-pointer">
             2022-05-01{" "}
             {
               <button>
@@ -55,7 +55,7 @@ export function DRETable() {
               </button>
             }
           </td>
-          <td>
+          <td className="hover:cursor-pointer">
             2022-05-30{" "}
             {
               <button>

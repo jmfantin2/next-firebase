@@ -34,7 +34,10 @@ body {
 }
 
 .tw_tableoptions {
-  @apply mt-4 
+  @apply p-2 min-h-[3rem] flex flex-row justify-between items-center
+}
+.tw_tableoptions button {
+  @apply rounded-full px-4 bg-accent hover:bg-accent_hover transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer
 }
 
 /* ### LOADING SPINNER ### */

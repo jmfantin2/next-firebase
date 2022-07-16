@@ -1,3 +1,5 @@
+import { PencilSimple } from "phosphor-react";
+
 export function ProdTable() {
   return (
     <table className="tw_table">
@@ -49,36 +51,36 @@ export function ProdTable() {
           <td>Shopee</td>
           <td>13.00%</td>
           <td>R$ 0.00</td>
-          <td>0.00%</td>
+          <td className="hover:cursor-pointer">0.00%</td>
           <td>R$ 1.80</td>
           <td>R$ 2.07</td>
-          <td>R$ 2.07</td>
+          <td className="hover:cursor-pointer">R$ 2.07</td>
           <td>R$ 0.00</td>
-          <td>1</td>
+          <td className="hover:cursor-pointer">1</td>
         </tr>
         <tr>
           <td>2</td>
           <td>Mercado Livre</td>
           <td>13.00%</td>
           <td>R$ 0.00</td>
-          <td>0.00%</td>
+          <td className="hover:cursor-pointer">0.00%</td>
           <td>R$ 1.80</td>
           <td>R$ 2.07</td>
-          <td>R$ 2.07</td>
+          <td className="hover:cursor-pointer">R$ 2.07</td>
           <td>R$ 0.00</td>
-          <td>1</td>
+          <td className="hover:cursor-pointer">1</td>
         </tr>
         <tr>
           <td>3</td>
           <td>Casa do Papel</td>
           <td>13.00%</td>
           <td>R$ 0.00</td>
-          <td>0.00%</td>
+          <td className="hover:cursor-pointer">0.00%</td>
           <td>R$ 1.80</td>
           <td>R$ 2.07</td>
-          <td>R$ 2.07</td>
+          <td className="hover:cursor-pointer">R$ 2.07</td>
           <td>R$ 0.00</td>
-          <td>1</td>
+          <td className="hover:cursor-pointer">1</td>
         </tr>
       </tbody>
     </table>
