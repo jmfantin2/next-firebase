@@ -22,7 +22,7 @@ body {
 /* ### NAVIGATION BAR ### */
 .tw_navbar {
   @apply z-[99] fixed top-0 h-[4rem] w-full
-  bg-white font-bold border-b border-b-gray-200
+  bg-gray-100 font-bold border-b border-b-gray-200
 }
 .tw_navbar div {
   @apply m-0 p-0 flex items-center justify-between h-full 

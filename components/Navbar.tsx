@@ -22,18 +22,21 @@ export function Navbar() {
               <button>DRE</button>
             </Link>
           </div>
-          <button
-            onClick={() =>
-              auth.signOut().then(() => {
-                toast("até a próxima!", {
-                  icon: "👋",
-                });
-                redirect("/");
-              })
-            }
-          >
-            Sair
-          </button>
+          <div>
+            <h1>{username}</h1>
+            <button
+              onClick={() =>
+                auth.signOut().then(() => {
+                  toast("até a próxima!", {
+                    icon: "👋",
+                  });
+                  redirect("/");
+                })
+              }
+            >
+              Sair
+            </button>
+          </div>
         </div>
       </nav>
     )
