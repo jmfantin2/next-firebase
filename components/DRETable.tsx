@@ -1,6 +1,6 @@
 export function DRETable() {
   return (
-    <table className="table-fixed">
+    <table className="tw_table">
       <thead>
         <tr>
           <th>Song</th>
