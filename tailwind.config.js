@@ -6,15 +6,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        auth: "url('https://64.media.tumblr.com/a20deb8fd0f205ad0c2a779e75cc8f17/ccb3eb59b9648095-ad/s2048x3072/0591d07b628f57512de6d989b605f0bfbc3fa85c.jpg')",
+        auth: "url('https://64.media.tumblr.com/9926e2c39c165eb39505134a2c7c7e27/b894ff9d14c18512-5c/s2048x3072/08f766bd836cdd2400b33e64f34b9f418005bd8c.pnj')",
         dash: "url('https://64.media.tumblr.com/5a85b9f90c36a8f1c2e9e59d5a2a07c2/1a8b6e3ca448cb94-10/s2048x3072/eeb96ee5bc9cae1ac81ec1bcec855c7cd2629c67.pnj')"
       },
       fontFamily:{
         sans: 'Roboto, sans-serif',
       },
       colors: {
-        accent: '#337aff',
-        accent_hover: '#4585ff',
+        accent: '#FF9F00',
+        accent_light: '#ffa445',
+        accent_greyed: '#F4A950',
         green: {
           300: '#00B37E',
           500: '#00875F',

@@ -19,7 +19,7 @@ body {
   @apply table-auto border-separate rounded-t-lg w-[100%]
 }
 .tw_table thead {
-  @apply bg-slate-500 text-white
+  @apply bg-gradient-to-r from-accent_light to-accent_greyed text-white
 }
 .tw_table tbody {
   @apply bg-slate-200
@@ -37,7 +37,7 @@ body {
   @apply p-2 min-h-[3rem] flex flex-row justify-between items-center
 }
 .tw_tableoptions button {
-  @apply rounded-full px-4 bg-accent hover:bg-accent_hover transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer
+  @apply rounded-full px-4 bg-accent hover:bg-accent_light transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer
 }
 
 /* ### LOADING SPINNER ### */
@@ -56,5 +56,5 @@ body {
   @apply m-0 p-0 flex items-center justify-between h-full 
 }
 .tw_navbar button {
-  @apply rounded py-2 px-4 ml-4 bg-accent hover:bg-accent_hover transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer last:mr-4
+  @apply rounded py-2 px-4 ml-4 bg-accent hover:bg-accent_light transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer last:mr-4
 }
