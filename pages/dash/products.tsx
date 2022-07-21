@@ -4,7 +4,7 @@ export default function ProductsPage({}) {
   return (
     <main className="tw_container">
       <ProdTable />
-      <div className="tw_tableoptions">
+      <div className="tw_prod_tableoptions">
         <button>Simular Situações</button>
       </div>
     </main>

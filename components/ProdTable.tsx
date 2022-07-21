@@ -1,6 +1,6 @@
 export function ProdTable() {
   return (
-    <table className="tw_table">
+    <table className="tw_prod_table">
       <thead>
         <tr>
           <th colSpan={10}>Caneta BIC</th>

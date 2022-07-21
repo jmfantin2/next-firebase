@@ -15,23 +15,23 @@ body {
 }
 
 /* ### TABLES ### */
-.tw_table {
+.tw_prod_table {
   @apply table-auto border-separate rounded-t-lg w-[100%]
 }
-.tw_table thead {
+.tw_prod_table thead {
   @apply bg-accent_greyed text-white
 }
-.tw_table tbody {
+.tw_prod_table tbody {
   @apply bg-slate-200
 }
-.tw_table th, td {
+.tw_prod_table th, td {
   @apply text-center p-2 overflow-hidden leading-none
 }
 
-.tw_tableoptions {
+.tw_prod_tableoptions {
   @apply p-2 min-h-[3rem] flex flex-row-reverse justify-between items-center
 }
-.tw_tableoptions button {
+.tw_prod_tableoptions button {
   @apply rounded-full px-4 bg-accent hover:bg-accent_light transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer
 }
 
