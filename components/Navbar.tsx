@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { UserContext } from "../lib/context";
 import { auth } from "../lib/firebase";
 import { redirect } from "../lib/redirect";
+import { Button, Dropdown } from "flowbite-react";
 
 import toast from "react-hot-toast";
 
@@ -15,27 +16,30 @@ export function Navbar() {
       <nav className="tw_navbar">
         <div>
           <div>
-            <Link href="/dash/products">
-              <button>Produtos</button>
-            </Link>
+            <Dropdown label="Produtos">
+              <Link href="/dash/products">
+                <Dropdown.Item>Caneta BIC</Dropdown.Item>
+              </Link>
+            </Dropdown>
             <Link href="/dash/dre">
-              <button>DRE</button>
+              <Button>DRE</Button>
             </Link>
           </div>
           <div>
-            <h1>{username}</h1>
-            <button
-              onClick={() =>
-                auth.signOut().then(() => {
-                  toast("até a próxima!", {
-                    icon: "👋",
-                  });
-                  redirect("/");
-                })
-              }
-            >
-              Sair
-            </button>
+            <Dropdown label={username}>
+              <Dropdown.Item
+                onClick={() =>
+                  auth.signOut().then(() => {
+                    toast("até a próxima!", {
+                      icon: "👋",
+                    });
+                    redirect("/");
+                  })
+                }
+              >
+                Sair
+              </Dropdown.Item>
+            </Dropdown>
           </div>
         </div>
       </nav>

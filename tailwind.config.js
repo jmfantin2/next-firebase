@@ -2,6 +2,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {
@@ -15,7 +16,7 @@ module.exports = {
       colors: {
         accent: '#FF9F00',
         accent_light: '#ffa445',
-        accent_greyed: '#F4A950',
+        accent_greyed: '#e8a14c',
         green: {
           300: '#00B37E',
           500: '#00875F',
@@ -42,5 +43,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }

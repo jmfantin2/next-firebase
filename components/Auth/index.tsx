@@ -128,7 +128,7 @@ export function UsernameForm() {
             className="rounded-full pr-2 pl-2 max-w-[10rem] mr-2"
             type="text"
             name="username"
-            placeholder="mercado_brasco"
+            placeholder="solid_strategy"
             value={formValue}
             onChange={onChange}
           />

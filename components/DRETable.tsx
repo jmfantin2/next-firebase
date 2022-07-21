@@ -6,12 +6,12 @@ export function DRETable() {
       <thead>
         <tr>
           <th>Empresa (CNPJ)</th>
-          <th>
+          <th className="bg-accent_light">
             Data
             <br />
             Inicial
           </th>
-          <th>
+          <th className="bg-accent_light">
             Data
             <br />
             Final
@@ -47,19 +47,19 @@ export function DRETable() {
       <tbody>
         <tr>
           <td>96.245.212/0001-08</td>
-          <td className="hover:cursor-pointer">
+          <td className="hover:cursor-pointer transition-colors ease-in-out delay-75 hover:bg-slate-100">
             2022-05-01{" "}
             {
               <button>
-                <Calendar size={20} color="#337aff" />
+                <Calendar size={20} color="#FF9F00" />
               </button>
             }
           </td>
-          <td className="hover:cursor-pointer">
+          <td className="hover:cursor-pointer transition-colors ease-in-out delay-75 hover:bg-slate-100">
             2022-05-30{" "}
             {
               <button>
-                <Calendar size={20} color="#337aff" />
+                <Calendar size={20} color="#FF9F00" />
               </button>
             }
           </td>
