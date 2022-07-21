@@ -48,7 +48,7 @@ body {
 }
 .tw_dre_table th:nth-child(2), th:nth-child(3) {
   /* initial and end dates */
-  @apply block bg-accent_light
+  @apply bg-accent_light
 }
 .tw_dre_table td {
   @apply block bg-slate-200
@@ -56,6 +56,13 @@ body {
 .tw_dre_table th, td {
   @apply text-center p-2 m-1 overflow-hidden leading-none
 }
+.tw_dre_table_sub {
+  @apply min-h-[3rem] flex justify-center gap-2 items-center
+}
+.tw_dre_table_sub button {
+  @apply rounded-full px-4 bg-accent hover:bg-accent_light transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer
+}
+
 
 /* ### LOADING SPINNER ### */
 .tw_loader {
