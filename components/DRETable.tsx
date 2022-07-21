@@ -2,46 +2,18 @@ import { Calendar } from "phosphor-react";
 
 export function DRETable() {
   return (
-    <table className="tw_table tw_table_vert">
+    <table className="tw_dre_table">
       <thead>
         <tr>
           <th>Empresa (CNPJ)</th>
-          <th className="bg-accent_light">
-            Data
-            <br />
-            Inicial
-          </th>
-          <th className="bg-accent_light">
-            Data
-            <br />
-            Final
-          </th>
-          <th>
-            Custo
-            <br />
-            Fixo
-          </th>
-          <th>
-            M. Contribuição
-            <br />
-            Nominal Total
-          </th>
-          <th>
-            Faturamento
-            <br />
-            Total
-          </th>
-          <th>
-            Custos
-            <br />
-            Variáveis
-          </th>
+          <th className="bg-accent_light">Data Inicial</th>
+          <th className="bg-accent_light">Data Final</th>
+          <th>Custo Fixo</th>
+          <th>M. Contribuição Nominal Total</th>
+          <th>Faturamento Total</th>
+          <th>Custos Variáveis</th>
           <th>Lucro</th>
-          <th>
-            Ponto de
-            <br />
-            Equilíbrio
-          </th>
+          <th>Ponto de Equilíbrio</th>
         </tr>
       </thead>
       <tbody>

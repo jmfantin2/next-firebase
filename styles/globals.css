@@ -15,25 +15,40 @@ body {
 }
 
 /* ### TABLES ### */
+
+/* >>> prod table */
 .tw_prod_table {
   @apply table-auto border-separate rounded-t-lg w-[100%]
 }
+  .tw_dre_table {
+    @apply table-auto border-separate rounded-t-lg h-auto
+  }
 .tw_prod_table thead {
   @apply bg-accent_greyed text-white
 }
+  .tw_dre_table thead{
+    @apply bg-accent_greyed text-white
+  }
 .tw_prod_table tbody {
   @apply bg-slate-200
 }
+  .tw_dre_table tbody{
+    @apply bg-slate-200
+  }
 .tw_prod_table th, td {
   @apply text-center p-2 overflow-hidden leading-none
 }
-
+  .tw_dre_table th, td {
+    @apply text-center p-2 overflow-hidden leading-none
+  }
 .tw_prod_table_sub {
   @apply p-2 min-h-[3rem] flex flex-row-reverse justify-between items-center
 }
 .tw_prod_table_sub button {
   @apply rounded-full px-4 bg-accent hover:bg-accent_light transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer
 }
+
+/* >>> dre table */
 
 /* ### LOADING SPINNER ### */
 .tw_loader {
