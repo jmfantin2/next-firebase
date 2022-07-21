@@ -18,16 +18,16 @@ body {
 
 /* >>> prod table */
 .tw_prod_table {
-  @apply table-auto border-separate rounded-t-lg w-[100%]
+  @apply table-auto border-separate w-[100%] bg-transparent
 }
 .tw_prod_table thead {
-  @apply bg-accent_greyed text-white
+  @apply bg-accent_greyed text-white rounded-md
 }
 .tw_prod_table tbody {
-  @apply bg-slate-200
+  @apply bg-slate-200 rounded-md
 }
 .tw_prod_table th, td {
-  @apply text-center p-2 overflow-hidden leading-none
+  @apply text-center p-2 overflow-hidden leading-none rounded-md
 }
 .tw_prod_table_sub {
   @apply p-2 min-h-[3rem] flex flex-row-reverse justify-between items-center
@@ -38,7 +38,7 @@ body {
 
 /* >>> dre table */
 .tw_dre_table {
-  @apply table-auto border-separate rounded-t-lg h-auto
+  @apply table-auto border-separate h-auto bg-transparent
 }
 .tw_dre_table tr {
   @apply block float-left
@@ -46,15 +46,11 @@ body {
 .tw_dre_table th {
   @apply block bg-accent_greyed text-white
 }
-.tw_dre_table th:nth-child(2), th:nth-child(3) {
-  /* initial and end dates */
-  @apply bg-accent_light
-}
 .tw_dre_table td {
   @apply block bg-slate-200
 }
 .tw_dre_table th, td {
-  @apply text-center p-2 m-1 overflow-hidden leading-none
+  @apply text-center p-2 m-1 overflow-hidden leading-none rounded-md
 }
 .tw_dre_table_sub {
   @apply min-h-[3rem] flex justify-center gap-2 items-center
