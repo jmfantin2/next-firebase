@@ -46,6 +46,10 @@ body {
 .tw_dre_table th {
   @apply block bg-accent_greyed text-white
 }
+.tw_dre_table th:nth-child(2), th:nth-child(3) {
+  /* initial and end dates */
+  @apply block bg-accent_light
+}
 .tw_dre_table td {
   @apply block bg-slate-200
 }

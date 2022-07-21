@@ -5,8 +5,8 @@ export function DRETable() {
     <table className="tw_dre_table">
       <tr>
         <th>Empresa (CNPJ)</th>
-        <th className="bg-accent_light">Data Inicial</th>
-        <th className="bg-accent_light">Data Final</th>
+        <th>Data Inicial</th>
+        <th>Data Final</th>
         <th>Custo Fixo</th>
         <th>M. Contribuição Nominal Total</th>
         <th>Faturamento Total</th>
