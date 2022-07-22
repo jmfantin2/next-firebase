@@ -7,8 +7,7 @@ export default function DREPage({}) {
         <DRETable />
       </div>
       <div className="tw_dre_table_sub">
-        <button>Simular</button>
-        <button>Salvar</button>
+        <button>Consultar</button>
       </div>
     </main>
   );

@@ -18,19 +18,19 @@ body {
 
 /* >>> prod table */
 .tw_prod_table {
-  @apply table-auto border-separate w-[100%] bg-transparent
+  @apply table-auto border-separate w-[100%]
 }
 .tw_prod_table thead {
-  @apply bg-accent_greyed text-white rounded-md
+  @apply bg-accent_greyed text-white
 }
 .tw_prod_table tbody {
-  @apply bg-slate-200 rounded-md
+  @apply bg-slate-200
 }
 .tw_prod_table th, td {
-  @apply text-center p-2 overflow-hidden leading-none rounded-md
+  @apply text-center p-2 overflow-hidden leading-none
 }
 .tw_prod_table_sub {
-  @apply p-2 min-h-[3rem] flex flex-row-reverse justify-between items-center
+  @apply p-2 min-h-[3rem] flex flex-row-reverse items-center gap-4 mt-2
 }
 .tw_prod_table_sub button {
   @apply rounded-full px-4 bg-accent hover:bg-accent_light transition-colors text-white min-h-[2rem] items-center max-h-[3rem] cursor-pointer
@@ -50,7 +50,13 @@ body {
   @apply block bg-slate-200
 }
 .tw_dre_table th, td {
-  @apply text-center p-2 m-1 overflow-hidden leading-none rounded-md
+  @apply text-center p-2 m-1 overflow-hidden leading-none rounded-md w-auto
+}
+.tw_dre_table th:nth-child(8), th:nth-child(9) {
+  @apply bg-accent_light
+}
+.tw_dre_table td:nth-child(8), td:nth-child(9) {
+  @apply hover:bg-slate-100 ease-in-out delay-75 transition-colors hover:cursor-pointer
 }
 .tw_dre_table_sub {
   @apply min-h-[3rem] flex justify-center gap-2 items-center

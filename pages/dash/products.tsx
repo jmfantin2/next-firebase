@@ -5,7 +5,8 @@ export default function ProductsPage({}) {
     <main className="tw_container">
       <ProdTable />
       <div className="tw_prod_table_sub">
-        <button>Simular Situações</button>
+        <button>Salvar</button>
+        <button>Simular</button>
       </div>
     </main>
   );
