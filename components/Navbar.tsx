@@ -26,6 +26,11 @@ export function Navbar() {
             </Link>
           </div>
           <div>
+            <img
+              className="w-[2.5rem] h-[2.5rem] rounded-full"
+              src={user?.photoURL}
+              alt=""
+            />
             <Dropdown label={username}>
               <Dropdown.Item
                 onClick={() =>
