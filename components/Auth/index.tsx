@@ -7,7 +7,7 @@ import {
   useCallback,
 } from "react";
 
-import { XCircle, CheckCircle, HourglassHigh } from "phosphor-react";
+import { CheckCircle, HourglassHigh, X } from "phosphor-react";
 
 import debounce from "lodash.debounce";
 
@@ -95,6 +95,7 @@ export function UsernameForm() {
     const batch = firestore.batch();
     batch.set(userDoc, {
       username: formValue,
+      photoURL: user.photoURL,
       displayName: user.displayName,
     });
     batch.set(usernameDoc, { uid: user.uid });
@@ -123,9 +124,9 @@ export function UsernameForm() {
     !username && (
       <section>
         <h3>Escolha um nome de usuário</h3>
-        <form onSubmit={onSubmit} className="flex flex-row items-center">
+        <form onSubmit={onSubmit} className="flex flex-row items-center my-2">
           <input
-            className="rounded-full pr-2 pl-2 max-w-[10rem] mr-2"
+            className="rounded-md pr-2 pl-2 max-w-[10rem] mr-2 border-none"
             type="text"
             name="username"
             placeholder="solid_strategy"
@@ -141,9 +142,9 @@ export function UsernameForm() {
               {loading ? (
                 <HourglassHigh className="p-1" />
               ) : isValid ? (
-                <CheckCircle />
+                <CheckCircle color="#e8a14c" />
               ) : (
-                <XCircle />
+                <X className="p-1" />
               )}
             </h1>
           </button>
