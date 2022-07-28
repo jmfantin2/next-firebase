@@ -16,11 +16,9 @@ export function Navbar() {
       <nav className="tw_navbar">
         <div>
           <div>
-            <Dropdown label="Produtos">
-              <Link href="/dash/products">
-                <Dropdown.Item>Caneta BIC</Dropdown.Item>
-              </Link>
-            </Dropdown>
+            <Link href="/dash/products">
+              <Button>Produtos</Button>
+            </Link>
             <Link href="/dash/dre">
               <Button>DRE</Button>
             </Link>
