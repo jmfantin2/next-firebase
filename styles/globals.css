@@ -85,19 +85,3 @@ body {
 .tw_navbar button {
   @apply bg-accent hover:bg-accent_light font-bold ml-2 mr-2
 }
-
-/* CSS MenuButton */
-
-.dropdown {
-  position: absolute;
-  top: 58px;
-  left: 10px;
-  width: 150px;
-  @apply bg-white border border-slate-400 rounded-lg p-4 overflow-hidden flex flex-col text-sm
-}
-.menu-item {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  @apply hover:bg-slate-200 transition-colors px-2 text-black w-full
-}

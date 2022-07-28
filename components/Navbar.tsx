@@ -4,7 +4,6 @@ import { UserContext } from "../lib/context";
 import { auth } from "../lib/firebase";
 import { redirect } from "../lib/redirect";
 import { Button, Dropdown } from "flowbite-react";
-import { MenuButton } from "./MenuButton";
 
 import toast from "react-hot-toast";
 
@@ -16,7 +15,16 @@ export function Navbar() {
     username && (
       <nav className="tw_navbar">
         <div>
-          <MenuButton />
+          <div>
+            <Dropdown label="Produtos">
+              <Link href="/dash/products">
+                <Dropdown.Item>Caneta BIC</Dropdown.Item>
+              </Link>
+            </Dropdown>
+            <Link href="/dash/dre">
+              <Button>DRE</Button>
+            </Link>
+          </div>
           <div>
             <img
               className="w-[2.5rem] h-[2.5rem] rounded-full"
